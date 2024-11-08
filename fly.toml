@@ -12,6 +12,11 @@ primary_region = 'lhr'
 [build]
   dockerfile = './Dockerfile'
 
+[[vm]]
+  memory = '4gb'
+  cpu_kind = 'shared'
+  cpus = 2
+
 [[mounts]]
   source = 'pg_data'
   destination = '/data'
