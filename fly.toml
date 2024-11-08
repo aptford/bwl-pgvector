@@ -9,6 +9,9 @@ primary_region = 'lhr'
 [env]
   PRIMARY_REGION = 'lhr'
 
+[build]
+  dockerfile = './Dockerfile'
+
 [[mounts]]
   source = 'pg_data'
   destination = '/data'
