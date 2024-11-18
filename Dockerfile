@@ -6,7 +6,7 @@ COPY . /tmp/pgvector
 
 RUN apt-get update && \
 		apt-mark hold locales && \
-		apt-get install -y --no-install-recommends build-essential postgresql-server-dev-$PG_MAJOR && \
+		apt-get install -y --no-install-recommends build-essential postgresql-server-dev-$PG_MAJOR postgresql-16-cron && \
 		cd /tmp/pgvector && \
 		make clean && \
 		make OPTFLAGS="" && \
